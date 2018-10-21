@@ -1,14 +1,14 @@
 // ES6 VERSION
 const http = new EasyHTTP();
 
-// http.get('https://jsonplaceholder.typicode.com/users')
-//   .then(data => console.log(data))
-//   .catch(err => console.log(err));
+http.get('https://jsonplaceholder.typicode.com/users')
+  .then(data => console.log(data))
+  .catch(err => console.log(err));
 
 const data = {
   name: 'John Petrucci',
   username: 'johnpetrucci',
-  email: 'jpetrucci@gmail.com'
+  email: 'jpetrucci@gmail.com',
 };
 
 // http.post('https://jsonplaceholder.typicode.com/users', data)
@@ -19,9 +19,9 @@ const data = {
 //   .then(data => console.log(data))
 //   .catch(err => console.log(err));
 
-http.delete('https://jsonplaceholder.typicode.com/users/3')
-  .then(data => console.log(data))
-  .catch(err => console.log(err));
+// http.delete('https://jsonplaceholder.typicode.com/users/3')
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err));
 
 // ES5 VERSION
 
